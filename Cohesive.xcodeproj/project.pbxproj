@@ -17,6 +17,10 @@
 		D35C1E50264B3DC000F56DE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C1E23264B3DBF00F56DE5 /* ContentView.swift */; };
 		D35C1E51264B3DC000F56DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C1E24264B3DC000F56DE5 /* Assets.xcassets */; };
 		D35C1E52264B3DC000F56DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35C1E24264B3DC000F56DE5 /* Assets.xcassets */; };
+		D37C27A8264CD808004A7D7A /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C27A7264CD808004A7D7A /* CSV.swift */; };
+		D37C27A9264CD808004A7D7A /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C27A7264CD808004A7D7A /* CSV.swift */; };
+		D37C27AB264CE114004A7D7A /* CSVTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C27AA264CE114004A7D7A /* CSVTable.swift */; };
+		D37C27AC264CE114004A7D7A /* CSVTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C27AA264CE114004A7D7A /* CSVTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		D35C1E44264B3DC000F56DE5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35C1E48264B3DC000F56DE5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D35C1E4A264B3DC000F56DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37C27A7264CD808004A7D7A /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		D37C27AA264CE114004A7D7A /* CSVTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 				D35C1E21264B3DBF00F56DE5 /* CohesiveApp.swift */,
 				D35C1E22264B3DBF00F56DE5 /* CohesiveDocument.swift */,
 				D35C1E23264B3DBF00F56DE5 /* ContentView.swift */,
+				D37C27A7264CD808004A7D7A /* CSV.swift */,
+				D37C27AA264CE114004A7D7A /* CSVTable.swift */,
 				D35C1E24264B3DC000F56DE5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -312,8 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37C27A8264CD808004A7D7A /* CSV.swift in Sources */,
 				D35C1E4D264B3DC000F56DE5 /* CohesiveDocument.swift in Sources */,
 				D35C1E4B264B3DC000F56DE5 /* CohesiveApp.swift in Sources */,
+				D37C27AB264CE114004A7D7A /* CSVTable.swift in Sources */,
 				D35C1E4F264B3DC000F56DE5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37C27A9264CD808004A7D7A /* CSV.swift in Sources */,
 				D35C1E4E264B3DC000F56DE5 /* CohesiveDocument.swift in Sources */,
 				D35C1E4C264B3DC000F56DE5 /* CohesiveApp.swift in Sources */,
+				D37C27AC264CE114004A7D7A /* CSVTable.swift in Sources */,
 				D35C1E50264B3DC000F56DE5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

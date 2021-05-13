@@ -9,19 +9,21 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension UTType {
-    static var exampleText: UTType {
-        UTType(importedAs: "com.example.plain-text")
+    static var csvDocument: UTType {
+        UTType(importedAs: "public.comma-separated-values-text")
     }
 }
 
 struct CohesiveDocument: FileDocument {
+    var csv : CSV
     var text: String
 
     init(text: String = "Hello, world!") {
-        self.text = text
+        self.text = "this is a test"
+        self.csv = CSV(content: "")
     }
 
-    static var readableContentTypes: [UTType] { [.exampleText] }
+    static var readableContentTypes: [UTType] { [.csvDocument] }
 
     init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,
@@ -30,10 +32,12 @@ struct CohesiveDocument: FileDocument {
             throw CocoaError(.fileReadCorruptFile)
         }
         text = string
+        csv = CSV(content: string)
+        print(csv.data)
     }
     
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = text.data(using: .utf8)!
+        let data = "foo".data(using: .utf8)!
         return .init(regularFileWithContents: data)
     }
 }

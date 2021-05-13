@@ -11,8 +11,12 @@ struct ContentView: View {
     @Binding var document: CohesiveDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        Group {
+            CSVTable(csv: $document.csv)
+        }
+        .frame(minWidth: 200, minHeight: 200)
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
