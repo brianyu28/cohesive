@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31CA5CB264D701E0083EABC /* CSVRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CA5CA264D701E0083EABC /* CSVRow.swift */; };
+		D31CA5CC264D701E0083EABC /* CSVRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CA5CA264D701E0083EABC /* CSVRow.swift */; };
+		D31CA5CE264D7D780083EABC /* CSVField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CA5CD264D7D780083EABC /* CSVField.swift */; };
+		D31CA5CF264D7D780083EABC /* CSVField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CA5CD264D7D780083EABC /* CSVField.swift */; };
 		D35C1E3E264B3DC000F56DE5 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C1E3D264B3DC000F56DE5 /* Tests_iOS.swift */; };
 		D35C1E49264B3DC000F56DE5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C1E48264B3DC000F56DE5 /* Tests_macOS.swift */; };
 		D35C1E4B264B3DC000F56DE5 /* CohesiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C1E21264B3DBF00F56DE5 /* CohesiveApp.swift */; };
@@ -41,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31CA5CA264D701E0083EABC /* CSVRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVRow.swift; sourceTree = "<group>"; };
+		D31CA5CD264D7D780083EABC /* CSVField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVField.swift; sourceTree = "<group>"; };
 		D35C1E21264B3DBF00F56DE5 /* CohesiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CohesiveApp.swift; sourceTree = "<group>"; };
 		D35C1E22264B3DBF00F56DE5 /* CohesiveDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CohesiveDocument.swift; sourceTree = "<group>"; };
 		D35C1E23264B3DBF00F56DE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 				D35C1E23264B3DBF00F56DE5 /* ContentView.swift */,
 				D37C27A7264CD808004A7D7A /* CSV.swift */,
 				D37C27AA264CE114004A7D7A /* CSVTable.swift */,
+				D31CA5CA264D701E0083EABC /* CSVRow.swift */,
+				D31CA5CD264D7D780083EABC /* CSVField.swift */,
 				D35C1E24264B3DC000F56DE5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -321,8 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37C27A8264CD808004A7D7A /* CSV.swift in Sources */,
+				D31CA5CB264D701E0083EABC /* CSVRow.swift in Sources */,
 				D35C1E4D264B3DC000F56DE5 /* CohesiveDocument.swift in Sources */,
 				D35C1E4B264B3DC000F56DE5 /* CohesiveApp.swift in Sources */,
+				D31CA5CE264D7D780083EABC /* CSVField.swift in Sources */,
 				D37C27AB264CE114004A7D7A /* CSVTable.swift in Sources */,
 				D35C1E4F264B3DC000F56DE5 /* ContentView.swift in Sources */,
 			);
@@ -333,8 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D37C27A9264CD808004A7D7A /* CSV.swift in Sources */,
+				D31CA5CC264D701E0083EABC /* CSVRow.swift in Sources */,
 				D35C1E4E264B3DC000F56DE5 /* CohesiveDocument.swift in Sources */,
 				D35C1E4C264B3DC000F56DE5 /* CohesiveApp.swift in Sources */,
+				D31CA5CF264D7D780083EABC /* CSVField.swift in Sources */,
 				D37C27AC264CE114004A7D7A /* CSVTable.swift in Sources */,
 				D35C1E50264B3DC000F56DE5 /* ContentView.swift in Sources */,
 			);

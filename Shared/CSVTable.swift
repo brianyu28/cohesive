@@ -14,11 +14,7 @@ struct CSVTable: View {
     var body: some View {
         VStack {
             ForEach(csv.data, id: \.self) { row in
-                HStack {
-                    ForEach(row, id: \.self) { field in
-                        Text(field)
-                    }
-                }
+                CSVRow(row: row)
             }
         }
     }
@@ -26,6 +22,6 @@ struct CSVTable: View {
 
 struct CSVTable_Previews: PreviewProvider {
     static var previews: some View {
-        CSVTable(csv: .constant(CSV(content: "")))
+        CSVTable(csv: .constant(CSV(content: "a,b,c")))
     }
 }

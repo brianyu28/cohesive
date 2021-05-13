@@ -14,7 +14,7 @@ struct ContentView: View {
         Group {
             CSVTable(csv: $document.csv)
         }
-        .frame(minWidth: 200, minHeight: 200)
+        .frame(minWidth: 300, minHeight: 200)
     }
     
 }
