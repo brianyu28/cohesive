@@ -16,10 +16,8 @@ extension UTType {
 
 struct CohesiveDocument: FileDocument {
     var csv : CSV
-    var text: String
 
-    init(text: String = "Hello, world!") {
-        self.text = "this is a test"
+    init() {
         self.csv = CSV(content: "")
     }
 
@@ -31,13 +29,11 @@ struct CohesiveDocument: FileDocument {
         else {
             throw CocoaError(.fileReadCorruptFile)
         }
-        text = string
         csv = CSV(content: string)
-        print(csv.data)
     }
     
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = "foo".data(using: .utf8)!
-        return .init(regularFileWithContents: data)
+        let textContent = csv.toString().data(using: .utf8)!
+        return .init(regularFileWithContents: textContent)
     }
 }

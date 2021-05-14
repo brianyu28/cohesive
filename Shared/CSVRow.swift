@@ -9,12 +9,12 @@ import SwiftUI
 
 struct CSVRow: View {
     
-    var row: [String]
+    @Binding var row: [String]
     
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(row, id: \.self) { field in
-                CSVField(content: field)
+            ForEach(0..<row.count, id: \.self) { i in
+                CSVField(content: $row[i])
             }
         }
     }
@@ -22,6 +22,6 @@ struct CSVRow: View {
 
 struct CSVRow_Previews: PreviewProvider {
     static var previews: some View {
-        CSVRow(row: ["a", "b", "c"])
+        CSVRow(row: .constant(["a", "b", "c"]))
     }
 }

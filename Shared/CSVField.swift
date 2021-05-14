@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CSVField: View {
     
-    var content: String
+    @Binding var content: String
     
     var body: some View {
         Group {
-            Text(content)
+            TextField("", text: $content)
         }
         .font(.system(size: 14))
         .frame(width: 80)
@@ -26,6 +26,6 @@ struct CSVField: View {
 
 struct CSVField_Previews: PreviewProvider {
     static var previews: some View {
-        CSVField(content: "foo")
+        CSVField(content: .constant("foo"))
     }
 }

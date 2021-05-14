@@ -13,8 +13,8 @@ struct CSVTable: View {
 
     var body: some View {
         VStack {
-            ForEach(csv.data, id: \.self) { row in
-                CSVRow(row: row)
+            ForEach(0..<csv.data.count, id: \.self) { i in
+                CSVRow(row: $csv.data[i])
             }
         }
     }

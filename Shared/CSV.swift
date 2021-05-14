@@ -71,4 +71,30 @@ struct CSV {
             }
         }
     }
+    
+    func toString() -> String {
+        var contents = ""
+        
+        for row in data {
+            for i in 0..<row.count {
+                let field = row[i]
+                
+                // Double quote field if it contains a special char
+                if field.contains(delimiter) || field.contains(newline) || field.contains(quote) {
+                    contents.append("\"")
+                    contents += field.replacingOccurrences(of: "\"", with: "\"\"")
+                    contents.append("\"")
+                } else {
+                    contents += field
+                }
+                
+                if i != row.count - 1 {
+                    contents.append(",")
+                }
+            }
+            contents.append("\n")
+        }
+        
+        return contents
+    }
 }
